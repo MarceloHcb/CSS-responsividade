@@ -6,6 +6,9 @@
     <title>Flexbox - Flex Flow</title>
     <style>
       .box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         color: #9069EF;
         background-color: rgb(243, 243, 243);
         border: 2px solid #232525;
@@ -19,8 +22,103 @@
       .box-container {
         background-color: #0fa36b;
         display: flex;
-        /* ADICIONE AQUI SEUS TESTES */
+        flex-direction: column;
+        flex-direction: column-reverse;
+        flex-direction: row-reverse;
+        flex-flow: column nowrap;
+       
+        
       }
+           .box1 {
+        color: #9069EF;
+        background-color: rgb(243, 243, 243);
+        border: 2px solid #232525;
+        font-size: 50px;
+        height: 60px;
+        margin: 10px 5px;
+        text-align: center;
+        width: 20%;
+      }
+
+      .box-container1 {
+        background-color: #0fa36b;
+        display: flex;
+        justify-content: center;        
+        justify-content: flex-end;
+        justify-content: flex-start;
+        justify-content: space-around;
+        justify-content: space-between;
+        justify-content: space-evenly;
+      }
+
+
+      .box-one {
+        color: #9069EF;
+        background-color: rgb(243, 243, 243);
+        border: 2px solid #232525;
+        font-size: 70px;
+        min-height: 80px;
+        margin: 10px 5px;
+        text-align: center;
+        width: 50px;
+      }
+
+      .box-two {
+        color: #9069EF;
+        background-color: rgb(243, 243, 243);
+        border: 2px solid #232525;
+        font-size: 50px;
+        min-height: 60px;
+        margin: 10px 5px;
+        text-align: center;
+        width: 50px;
+      }
+
+      .box-three {
+        color: #9069EF;
+        background-color: rgb(243, 243, 243);
+        border: 2px solid #232525;
+        font-size: 30px;
+        margin: 10px 5px;
+        min-height: 50px;
+        text-align: center;
+        width: 50px;
+      }
+
+      .box-container2 {
+        background-color: #0fa36b;
+        display: flex;
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: stretch;
+        align-items: baseline;
+        align-items: center;
+      }
+      .box3 {
+        color: #9069EF;
+        background-color: rgb(243, 243, 243);
+        border: 2px solid #232525;
+        font-size: 50px;
+        min-height: 60px;
+        margin: 10px 5px;
+        text-align: center;
+        width: 30%;
+      }
+
+      .box-container3 {       
+        background-color: #0fa36b;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-content: flex-end;
+        align-content: flex-start;
+        align-content: stretch;
+        align-content: space-between;
+        align-content: space-around;        
+        height: 600px;
+      }
+      
+    
     </style>
 
   </head>
@@ -31,6 +129,30 @@
       <div class="box">3</div>
       <div class="box">4</div>
       <div class="box">5</div>
+    </div>
+<h2>flex- justify-content</h2>
+    <div class="box-container1">
+      <div class="box1">1</div>
+      <div class="box1">2</div>
+      <div class="box1">3</div>
+    </div>
+    <h2>Flexbox - Align Items</h2>
+    <div class="box-container2">
+      <div class="box-one">1</div>
+      <div class="box-two">2</div>
+      <div class="box-three">3</div>
+    </div>
+    <h2>Flexbox - Align Content</h2>
+    <div class="box-container3">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
     </div>
   </body>
 </html>
