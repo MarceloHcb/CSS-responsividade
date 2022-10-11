@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX </title>
+    <style>
+        h2{
+            text-align: center;
+        }
+      .container {
+        border: 1px solid black;
+        display: flex;
+        height: 300px;
+        margin: auto;
+        width: 500px;
+      }
+
+      .keep {
+        align-self: center;
+        background-color: #FAA488;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        list-style: none;
+        align-self: flex-end;
+      }
+
+      .change {       
+        align-self: center;
+        background-color: #FBD26A;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        list-style: none;
+        align-self: flex-start;        
+      }
+
+      .container1 {
+        border: 1px solid black;
+        display: flex;
+        height: 50px;
+        margin: auto;
+        width: 500px;
+      }
+
+      .box {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 125px;
+      }
+
+      .one {
+        background-color: #FBD26A;
+        display: flex;        
+        order: 4;
+        list-style: none;
+      }
+
+      .two {
+        background-color: #FAA488;
+        display: flex;       
+        order: 3;
+        list-style: none;
+      }
+
+      .three {
+        background-color: #9069EF;
+        display: flex;
+       
+        order: 2;
+        list-style: none;
+      }
+
+      .four {
+        background-color: #006472;
+        display: flex;      
+        order: 1;
+        list-style: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2>ALIGN SELF</h2>
+    <ul class="container">
+      <li class="keep">REFERÊNCIA</li>
+      <li class="change">ELEMENTO TESTE</li>
+      <li class="keep">REFERÊNCIA</li>
+    </ul>
+
+    <h2>Propriedade: order</h2>
+
+    <ul class="container1">
+        <li class="box one">1</li>
+        <li class="box two">2</li>
+        <li class="box three">3</li>
+        <li class="box four">4</li>
+      </ul>
+  </body>
+</html>
